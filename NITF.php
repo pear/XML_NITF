@@ -52,8 +52,8 @@ require_once('XML/Parser.php');
  *    die("Parsing failed: ".$xResult->getMessage());
  * }
  * 
- * echo $xResult->getHeadline();
- * echo $xResult->getByline();
+ * echo $oNITF->getHeadline();
+ * echo $oNITF->getByline();
  * 
  * ?>
  * </sample>
