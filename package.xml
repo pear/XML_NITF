@@ -23,7 +23,8 @@
   <date>2004-11-29</date>
   <state>stable</state>
   <notes>
-   Fix for bug #2787 getMedia method typo 
+   Fix for bug #2787 getMedia method typo. Added support for document
+   urgency status.
   </notes>
   <filelist>
    <dir name="/" baseinstalldir="XML">
@@ -42,7 +43,8 @@
   <date>2004-11-29</date>
   <state>stable</state>
   <notes>
-   This release fixes the getByline() method, and is the first public stable release.
+   Fix for bug #2787 getMedia method typo. Added support for document urgency
+   status.
   </notes>
  </release>
   <release>
