@@ -298,7 +298,7 @@ class XML_NITF extends XML_Parser
         } else {
 
            $aMediaRefs = array();
-           foreach($this->m_aMedia as $aMediaElement) {
+           foreach($this->m_aMedia as $aMediaElem) {
 
               if (isset($aMediaElem[$sProperty])) {
 
