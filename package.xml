@@ -23,8 +23,8 @@
   <date>2005-03-18</date>
   <state>stable</state>
   <notes>
-   Fixed bug #3084 getDocData('copyright') returns null. The code has been
-   reformatted so that spacing is all tabs. 
+   Fixed bug #3084 getDocData('copyright') returns null. Retrofitted comments to
+   conform to PEAR coding standards.
   </notes>
   <filelist>
    <dir name="/" baseinstalldir="XML">
@@ -43,8 +43,8 @@
   <date>2005-03-18</date>
   <state>stable</state>
   <notes>
-   Fixed bug #3084 getDocData('copyright') returns null. The code has been
-   reformatted so that spacing is all tabs. 
+   Fixed bug #3084 getDocData('copyright') returns null. Retrofitted comments to
+   conform to PEAR coding standards.
   </notes>
  </release>
    <release>
