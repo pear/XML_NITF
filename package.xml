@@ -20,7 +20,7 @@
 
  <release>
   <version>1.0.2</version>
-  <date>2005-03-18</date>
+  <date>2005-03-21</date>
   <state>stable</state>
   <notes>
    Fixed bug #3084 getDocData('copyright') returns null. Retrofitted comments to
@@ -40,7 +40,7 @@
  <changelog>
     <release>
   <version>1.0.2</version>
-  <date>2005-03-18</date>
+  <date>2005-03-21</date>
   <state>stable</state>
   <notes>
    Fixed bug #3084 getDocData('copyright') returns null. Retrofitted comments to
