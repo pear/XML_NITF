@@ -513,6 +513,13 @@ class XML_NITF extends XML_Parser
            case 'DOC-ID':
               $this->m_kDocData['doc-id'] = $kAttrib['ID-STRING'];
               break;
+			  
+			// NITF 3.0 extension - added per request by Lars Schenk
+			// (info@lars-schenk.de). Document urgency status information.
+			
+			case 'URGENCY':
+				$this->m_kDocData['urgency'] = $kAttrib['ED-URG'];
+				break; 
 
            // The list of keywords or phrases are just added to the array of
            // keywords.
