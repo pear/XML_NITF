@@ -19,11 +19,11 @@
  </maintainers>
 
  <release>
-  <version>1.0.0</version>
-  <date>2003-05-29</date>
+  <version>1.0.1</version>
+  <date>2004-11-29</date>
   <state>stable</state>
   <notes>
-   This release fixes the getByline() method, and is the first public stable release.
+   Fix for bug #2787 getMedia method typo 
   </notes>
   <filelist>
    <dir name="/" baseinstalldir="XML">
@@ -35,4 +35,23 @@
      <dep type="pkg" rel="has">XML_Parser</dep>
   </deps>
  </release>
+ 
+ <changelog>
+   <release>
+  <version>1.0.1</version>
+  <date>2004-11-29</date>
+  <state>stable</state>
+  <notes>
+   This release fixes the getByline() method, and is the first public stable release.
+  </notes>
+ </release>
+  <release>
+  <version>1.0.0</version>
+  <date>2003-05-29</date>
+  <state>stable</state>
+  <notes>
+   This release fixes the getByline() method, and is the first public stable release.
+  </notes>
+ </release>
+ </changelog>
 </package>
