@@ -267,9 +267,9 @@ class XML_NITF extends XML_Parser
     function getByline( $sProperty = 'author' )
     {
         $sProperty = strtolower($sProperty);
-        if (isset($this->m_aByline[$sProperty])) {
+        if (isset($this->m_kByline[$sProperty])) {
 
-            return $this->m_aByline[$sProperty];
+            return $this->m_kByline[$sProperty];
 
         }
         
