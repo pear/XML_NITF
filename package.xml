@@ -19,12 +19,12 @@
  </maintainers>
 
  <release>
-  <version>1.0.1</version>
-  <date>2005-12-17</date>
+  <version>1.0.2</version>
+  <date>2005-03-18</date>
   <state>stable</state>
   <notes>
-   Fix for bug #2787 getMedia method typo. Added support for document
-   urgency status.
+   Fixed bug #3084 getDocData('copyright') returns null. The code has been
+   reformatted so that spacing is all tabs. 
   </notes>
   <filelist>
    <dir name="/" baseinstalldir="XML">
@@ -38,6 +38,15 @@
  </release>
  
  <changelog>
+    <release>
+  <version>1.0.2</version>
+  <date>2005-03-18</date>
+  <state>stable</state>
+  <notes>
+   Fixed bug #3084 getDocData('copyright') returns null. The code has been
+   reformatted so that spacing is all tabs. 
+  </notes>
+ </release>
    <release>
   <version>1.0.1</version>
   <date>2005-12-17</date>
