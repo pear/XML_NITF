@@ -19,12 +19,11 @@
  </maintainers>
 
  <release>
-  <version>1.0.2</version>
-  <date>2005-03-21</date>
+  <version>1.1.0</version>
+  <date>2005-11-30</date>
   <state>stable</state>
   <notes>
-   Fixed bug #3084 getDocData('copyright') returns null. Retrofitted comments to
-   conform to PEAR coding standards.
+   Added support for the <meta> tags in the <head> section of the NITF.
   </notes>
   <filelist>
    <dir name="/" baseinstalldir="XML">
@@ -38,6 +37,14 @@
  </release>
  
  <changelog>
+  <release>
+  <version>1.1.0</version>
+  <date>2005-11-30</date>
+  <state>stable</state>
+  <notes>
+   Added support for the <meta> tags in the <head> section of the NITF.
+  </notes>
+ </release>
     <release>
   <version>1.0.2</version>
   <date>2005-03-21</date>
