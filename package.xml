@@ -23,7 +23,7 @@
   <date>2005-11-30</date>
   <state>stable</state>
   <notes>
-   Added support for the <meta> tags in the <head> section of the NITF.
+   Added support for the "meta" tags in the "head" section of the NITF.
   </notes>
   <filelist>
    <dir name="/" baseinstalldir="XML">
@@ -42,7 +42,7 @@
   <date>2005-11-30</date>
   <state>stable</state>
   <notes>
-   Added support for the <meta> tags in the <head> section of the NITF.
+   Added support for the "meta" tags in the "head" section of the NITF.
   </notes>
  </release>
     <release>
