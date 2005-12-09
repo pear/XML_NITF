@@ -70,13 +70,13 @@ class XML_NITF extends XML_Parser
 {
     // {{{ properties
     
-	/**
-	 * Meta tag properties retrieved from document head section
-	 * @see getMetaData()
-	 * @var array
-	 * @access private
-	 */
-	var $m_kMeta = array();
+    /**
+     * Meta tag properties retrieved from document head section
+     * @see getMetaData()
+     * @var array
+     * @access private
+     */
+    var $m_kMeta = array();
 
     /**
      * Document Metadata
@@ -259,16 +259,16 @@ class XML_NITF extends XML_Parser
     // }}}
     // {{{ getMetaData()
     
-	/**
-	 * Retrieve meta data from the NITF file
-	 * @return array Returns an array of key/value pairs from the meta section
-	 * @access public
-	 */
-	function getMetaData()
-	{
-		return $this->m_kMeta;
-	}
-	
+    /**
+     * Retrieve meta data from the NITF file
+     * @return array Returns an array of key/value pairs from the meta section
+     * @access public
+     */
+    function getMetaData()
+    {
+        return $this->m_kMeta;
+    }
+    
     // }}}
     // {{{ getPubData()
 
@@ -636,13 +636,13 @@ class XML_NITF extends XML_Parser
             case 'REVISION-HISTORY' :
                 array_push($this->m_akRevisions, array_change_key_case($kAttrib, CASE_LOWER));
                 break;
-				
-			case 'META':
-				if (!empty($kAttrib['NAME']) && isset($kAttrib['CONTENT'])) {
-					$sName = strtolower($kAttrib['NAME']);
-					$this->m_kMeta[$sName] = $kAttrib['CONTENT'];
-				}
-				break;
+                
+            case 'META':
+                if (!empty($kAttrib['NAME']) && isset($kAttrib['CONTENT'])) {
+                    $sName = strtolower($kAttrib['NAME']);
+                    $this->m_kMeta[$sName] = $kAttrib['CONTENT'];
+                }
+                break;
 
         }
 
