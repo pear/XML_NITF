@@ -230,6 +230,8 @@ class XML_NITF extends XML_Parser
      *                            available (UNIX timestamp)
      *                            +"date.expires" - date the document is no longer
      *                            valid (UNIX timestamp)
+     *                            +"management-status" - this document's current
+     *                            workflow status
      *
      * @return mixed  All of the elements from the <docdata> block will be returned
      *                if a specific property is not provided. If a specific property
@@ -534,6 +536,12 @@ class XML_NITF extends XML_Parser
             case 'DOC.COPYRIGHT' :
                 $this->m_kDocData['copyright'] = $kAttrib['HOLDER'];
                 break;
+				
+			case 'DOCDATA':
+				if(!empty($kAttrib['MANAGEMENT-STATUS'])) {
+					$this->m_kDocData['management-status'] = $kAttrib['MANAGEMENT-STATUS'];
+				}
+				break;
 
             case 'MEDIA' :
                 $this->_kMedia = array ();
@@ -814,6 +822,13 @@ class XML_NITF extends XML_Parser
                 $this->_sContent .= $sData;
                 return;
 
+            }
+			
+			// Headlines broken up in the main content should be added back in
+			// to the sub-headline array. This can be used to create an index.
+            
+            if (in_array('HL2', $this->m_aParentTags)) {
+                $this->_sHedline .= $sData;
             }
 
         }
