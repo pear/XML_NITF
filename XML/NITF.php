@@ -25,7 +25,7 @@
 /**
  * Include the XML_Parser class as the base class
  */
-require_once ('XML/Parser.php');
+require_once 'XML/Parser.php';
 
 // {{{ XML_NITF
 
@@ -510,7 +510,7 @@ class XML_NITF extends XML_Parser
      * @return void
      * @access private
      */
-    function StartHandler($oParser, $sName, $kAttrib)
+    function StartHandler($oParser, $sName, &$kAttrib)
     {
         // Push the element into the stack of XML elements already visited
 
@@ -869,4 +869,4 @@ class XML_NITF extends XML_Parser
  * End:
  */
  
-?>
+
