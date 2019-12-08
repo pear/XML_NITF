@@ -10,10 +10,10 @@
   <email>polone@townnews.com</email>
   <active>yes</active>
  </lead>
- <date>2010-10-24</date>
- <time>12:19:36</time>
+ <date>2018-08-31</date>
+ <time>09:21:00</time>
  <version>
-  <release>1.1.1</release>
+  <release>1.1.2</release>
   <api>1.1.0</api>
  </version>
  <stability>
